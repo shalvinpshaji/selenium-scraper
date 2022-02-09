@@ -56,7 +56,6 @@ def get_videos(driver):
 if __name__ == "__main__":
     edge_driver = get_driver()
     edge_driver.get(YOUTUBE_TRENDING_URL)
-    time.sleep(3)
     html = edge_driver.find_element(By.TAG_NAME, 'html')
     print("Title :", edge_driver.title)
     content = get_videos(edge_driver)
